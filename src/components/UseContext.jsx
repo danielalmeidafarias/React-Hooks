@@ -1,7 +1,15 @@
-import React from "react";
+import ThemeContextProvider from "../contexts/ThemeContext";
+
+import Greeting from "./contextComponents/Greeting";
+import Message from "./contextComponents/Message";
 
 const UseContext = () => {
-    return ( <div></div> );
+    return ( 
+        <ThemeContextProvider>
+            <Message />
+            <Greeting />
+        </ThemeContextProvider>
+    );
 }
  
 export default UseContext;

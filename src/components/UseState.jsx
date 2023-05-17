@@ -11,7 +11,7 @@ const UseState = () => {
         })
         
         setTheme((prevState) => {
-            prevState == 'dark' ? prevState = 'light' : prevState = 'dark'
+            prevState === 'dark' ? prevState = 'light' : prevState = 'dark'
             return prevState
         })
     }
